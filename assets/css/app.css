@@ -1,0 +1,35 @@
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 1.1rem;
+  }
+  .card{
+    cursor: pointer;
+    width: 6.5rem;
+    box-shadow: 0 0 0.15rem rgba(0,0,0,.1)
+  }
+  .card:hover{
+    opacity: .90;
+  }
+  .card img{
+    object-fit: contain;
+  }
+
+  .fade-enter-active{
+    transition: opacity 0s, transform .3s;
+    transition-timing-function: cubic-bezier(1,0,0,1);
+  }
+  .fade-leave-active{
+    transition: opacity .15s, transform .15s;
+    transition-timing-function: linear;
+  }
+
+  .fade-enter, .fade-leave-active{
+    opacity: 0.5;
+    transform: translateX(-10px);
+  }
+  .fade-leave-active{position: absolute;}
